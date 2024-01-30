@@ -1,0 +1,29 @@
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+button:hover {
+    color: white;
+}
+
+#stripe {
+    height: 40px;
+    text-align: center;
+    width: 100%;
+}
+#container {
+    margin: 50px auto;
+    width: 800px;
+}
+
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    transition: background 0.4s;
+}
