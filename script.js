@@ -45,6 +45,15 @@ function componentToHex(c) {
 }
 
 
+function hex2rgb(c) {
+    var bigint = parseInt(c.split('#')[1], 16);
+    var r = (bigint >> 16) & 255;
+    var g = (bigint >> 8) & 255;
+    var b = bigint & 255;
+
+    return 'rgb(' + r + ', ' + g + ', ' + b + ')';
+}
+
 
 function randomColor() {
     let red = Math.floor(Math.random() * 256);
@@ -74,11 +83,12 @@ function init() {
         squares[i].addEventListener('click', () => {
         clickedColor = squares[i].style.background;
 
-        if (clickedColor === pickedColor) {
+        if (clickedColor === hex2rgb(pickedColor)) {
+
             messageDisplay.textContent = 'Correct!';
             resetButton.textContent = 'Play Again?';
             changeColor(clickedColor);
-            h1.style.background = clickedColor;
+            h1.style.background = white;
         } else {
             squares[i].style.background = '#fff';
             messageDisplay.textContent = 'Try Again';
