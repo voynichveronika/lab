@@ -71,9 +71,7 @@ function init() {
     }
 
     for (let i = 0; i < squares.length; i++) {
-        // add click listeners to squares
         squares[i].addEventListener('click', () => {
-        // grab color of clicked square 
         clickedColor = squares[i].style.background;
 
         if (clickedColor === pickedColor) {

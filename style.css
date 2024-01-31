@@ -4,10 +4,22 @@ h1 {
     text-align: center;
 }
 
-
+button {
+    background: none;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    color: black;
+    font-size: inherit;
+    transition: all 0.2s;
+    outline: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
 
 button:hover {
-    color: white;
+    color: gray;
 }
 
 #stripe {
@@ -20,10 +32,18 @@ button:hover {
     width: 800px;
 }
 
+.selected {
+    background-color: #1F9D55;
+    color: white;
+}
 
 .square {
     width: 30%;
     padding-bottom: 30%;
     float: left;
+    margin: 1.66%;
+    border-radius: 50%;
     transition: background 0.4s;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
 }
