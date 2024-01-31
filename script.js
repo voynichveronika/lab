@@ -80,7 +80,7 @@ function init() {
             changeColor(clickedColor);
             h1.style.background = clickedColor;
         } else {
-            squares[i].style.background = '#232323';
+            squares[i].style.background = '#fff';
             messageDisplay.textContent = 'Try Again';
         }
         });
