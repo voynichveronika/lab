@@ -1,6 +1,6 @@
 
 h1 {
-    padding: 30px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -28,9 +28,9 @@ button:hover {
     text-align: center;
     width: 100%;
 }
-#container {
+.container {
     margin: 50px auto;
-    width: 800px;
+    width: 500px;
 }
 
 .selected {
@@ -59,4 +59,35 @@ button:hover {
     transition: background 0.4s;
     -webkit-transition: background 0.4s;
     -moz-transition: background 0.4s;
+    cursor: pointer;
 }
+
+  .tab-content {
+    display: none;
+  }
+
+.content-1{
+    display: run-in;
+}
+.content-2{
+    display: run-in;
+}
+.content-3{
+    display: run-in;
+}
+
+
+  input#tab-btn-1:checked~.content-1
+  {
+display: run-in;
+  }
+  input#tab-btn-2:checked~.content-2
+  {
+display: run-in;
+  }
+  input#tab-btn-3:checked~.content-3 
+  {
+    display: run-in;
+  }
+
+

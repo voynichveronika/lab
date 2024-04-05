@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Game</title>
@@ -7,36 +6,61 @@
 
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-
-
-<body>
     <h1>
         <br> COLOR  <span id="colorDisplay"></span> <br>
     </h1>
 
+
+<form id="my_form">
     <div id="stripe">
-        <button id="reset" class="btn">New Color</button>
-        <INPUT TYPE="radio" NAME = "level" VALUE="Easy" CHECKED> Easy </INPUT>
-        <INPUT TYPE="radio" NAME = "level" VALUE="Medium"> Medium </INPUT>
-        <INPUT TYPE="radio" NAME = "level" VALUE="Hard"> Hard </INPUT>
 
         <br><span id="message"></span></br>
-    </div>
+        <button id="reset" class="btn">New Level</button>
 
-    <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
 
-</html>
+        <input id="tab-btn-1" name="tabbtn" type="radio" value="Easy" onclick="rbtn1();">
+        <label type="radio" for="tab-btn-1">Easy</label>
+
+        <input id="tab-btn-2" name="tabbtn" type="radio" value="Medium" onclick="rbtn2();">
+        <label type="radio" for="tab-btn-2">Medium</label>
+
+        <input id="tab-btn-3" name="tabbtn" type="radio" value="Hard" onclick="rbtn3();">
+        <label type="radio" for="tab-btn-3">Hard</label>
+
+
+
+
+            <div class="container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+  
+
+
+
+    </div>
+</form>
+        <div class="v1"><button id="p1" style="position: absolute; top: 136px; left: 470px; height: 40px;" onclick="p1();">New Colors</button></div>
+        <div class="v2"><button id="p2" style="position: absolute; top: 136px; left: 470px; height: 40px;" onclick="p2();">New Colors</button></div> 
+        <div class="v3"><button id="p3" style="position: absolute; top: 136px; left: 470px; height: 40px;" onclick="p3();">New Colors</button></div> 
   <script  src="./script.js"></script>
 
 </body>
